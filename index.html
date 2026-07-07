@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sana Tilak | Chemistry Portfolio</title>
+    <style>
+        /* Base Layout & Clean Academic Fonts */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            color: #333; line-height: 1.6; background-color: #fcfcfc; 
+        }
+        .container { display: flex; max-width: 1200px; margin: 0 auto; padding: 20px; gap: 40px; }
+
+        /* Left Sidebar - Profile Card */
+        .sidebar { width: 30%; position: sticky; top: 20px; height: fit-content; text-align: left; }
+        .profile-img { width: 100%; max-width: 240px; border-radius: 4px; margin-bottom: 20px; object-fit: cover; }
+        .name { font-size: 1.8rem; font-weight: 700; color: #111; margin-bottom: 5px; }
+        .title { font-size: 1rem; color: #666; margin-bottom: 20px; }
+        .contact-info { list-style: none; padding: 0; font-size: 0.9rem; }
+        .contact-info li { margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+        .contact-info a { color: #0066cc; text-decoration: none; }
+        .contact-info a:hover { text-decoration: underline; }
+
+        /* Right Content Pane */
+        .content { width: 70%; }
+        
+        /* Navigation Links bar like the reference site */
+        nav { display: flex; gap: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 30px; }
+        nav a { font-weight: 600; color: #444; text-decoration: none; font-size: 1rem; }
+        nav a:hover { color: #0066cc; }
+
+        /* Document Typography */
+        h2 { font-size: 1.4rem; font-weight: 600; color: #222; margin: 30px 0 15px 0; padding-bottom: 5px; border-bottom: 1px solid #eee; }
+        p { margin-bottom: 15px; font-size: 1.05rem; color: #444; }
+        ul { margin-bottom: 15px; padding-left: 20px; }
+        li { margin-bottom: 6px; font-size: 1.05rem; color: #444; }
+        
+        /* Research & Project Blocks */
+        .project-item { margin-bottom: 20px; }
+        .project-title { font-weight: 600; color: #111; display: inline; }
+        .project-authors { font-size: 0.95rem; color: #555; margin: 2px 0; }
+        .project-links { font-size: 0.9rem; margin-top: 4px; }
+        .project-links a { color: #0066cc; text-decoration: none; font-weight: bold; margin-right: 10px; }
+        .badge { display: inline-block; background: #f0f4f8; color: #0044cc; font-size: 0.8rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 5px; }
+
+        /* Blockquotes for notes/announcements */
+        blockquote { background: #f9f9f9; border-left: 4px solid #0066cc; padding: 15px; margin: 20px 0; font-size: 0.95rem; }
+
+        /* Mobile Layout Optimization */
+        @media (max-width: 768px) {
+            .container { flex-direction: column; padding: 15px; gap: 20px; }
+            .sidebar, .content { width: 100%; position: static; }
+            .profile-img { max-width: 150px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Profile Area -->
+    <aside class="sidebar">
+        <!-- Replace with your picture file name once uploaded to your repo -->
+        <img src="profile.jpg" alt="Sana Tilak" class="profile-img" onerror="this.src='https://via.placeholder.com/240x300?text=Your+Photo'">
+        <h1 class="name">Sana Tilak</h1>
+        <p class="title">Chemistry Undergraduate Student</p>
+        
+        <ul class="contact-info">
+            <li>📧 <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+            <li>🔗 <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></li>
+            <li>💻 <a href="https://github.com" target="_blank">GitHub Profile</a></li>
+            <li>📄 <a href="resume.pdf" target="_blank">Download Full CV PDF</a></li>
+        </ul>
+    </aside>
+
+    <!-- Right Main Content Area -->
+    <main class="content">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#research">Research & Projects</a>
+            <a href="#education">Education</a>
+        </nav>
+
+        <section id="about">
+            <p>I am a first-year undergraduate chemistry student deeply interested in computational molecular workflows, molecular orbital dynamics, and algorithmic drug discovery pipelines.</p>
+            <p>My current academic focus explores how machine learning models read and analyze chemical spatial structures to optimize molecular data screening for neglected global health crises.</p>
+            
+            <blockquote>
+                <strong>Open for Collaboration:</strong> I am seeking remote volunteer opportunities or data verification roles relating to public health, rural education assistance, and structural chemistry tracking.
+            </blockquote>
+        </section>
+
+        <section id="skills">
+            <h2>💻 Technical & Lab Capabilities</h2>
+            <ul>
+                <li><strong>Computational Analysis:</strong> Machine Learning modeling, Molecular Fingerprinting, Data Benchmarking layouts.</li>
+                <li><strong>Software & Frameworks:</strong> Python (Pandas, NumPy, Scikit-Learn), HTML5/CSS3, Git/Version Control.</li>
+                <li><strong>Core Laboratory:</strong> Thin-Layer Chromatography (TLC), Spectroscopic Data collection, Titrations, Safe Chemical Sourcing.</li>
+            </ul>
+        </section>
+
+        <section id="research">
+            <h2>🔬 Selected Projects & Research</h2>
+            
+            <div class="project-item">
+                <div class="project-title">A Rigorous 2D QSAR Benchmarking Study to Evaluate Molecular Fingerprints for Machine Learning-Driven Drug Discovery</div>
+                <span class="badge">In Progress</span>
+                <p class="project-authors"><strong>Sana Tilak</strong></p>
+                <p>Evaluating how distinct structural molecular descriptor frameworks impact predictive algorithm scoring against WHO neglected tropical disease targets.</p>
+                <div class="project-links">
+                    <a href="#">[Project Code]</a>
+                    <a href="#">[Abstract Layout]</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">JUST LET IT GO! — Frontend Cathartic Web Interface</div>
+                <span class="badge">Finished</span>
+                <p class="project-authors">Design & Development Lead</p>
+                <p>An interactive, minimal digital notebook application structured using modern web animation handlers to enable user catharsis through disappearing text properties.</p>
+                <div class="project-links">
+                    <a href="#">[Live Application]</a>
+                    <a href="#">[Repository]</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>🎓 Academic Background</h2>
+            <ul>
+                <li>
+                    <strong>Undergraduate Degree in Chemistry</strong><br>
+                    Expected Graduation: 2028 | Focus tracks: Computational Science, Physical Chemistry
+                </li>
+            </ul>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
