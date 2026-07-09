@@ -26,7 +26,7 @@
         /* Right Content Pane */
         .content { width: 70%; }
         
-        /* Navigation Links bar like the reference site */
+        /* Navigation Links bar */
         nav { display: flex; gap: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; margin-bottom: 30px; }
         nav a { font-weight: 600; color: #444; text-decoration: none; font-size: 1rem; }
         nav a:hover { color: #0066cc; }
@@ -38,10 +38,10 @@
         li { margin-bottom: 6px; font-size: 1.05rem; color: #444; }
         
         /* Research & Project Blocks */
-        .project-item { margin-bottom: 20px; }
-        .project-title { font-weight: 600; color: #111; display: inline; }
-        .project-authors { font-size: 0.95rem; color: #555; margin: 2px 0; }
-        .project-links { font-size: 0.9rem; margin-top: 4px; }
+        .project-item { margin-bottom: 30px; }
+        .project-title { font-weight: 600; color: #111; display: inline; font-size: 1.15rem; }
+        .project-authors { font-size: 0.95rem; color: #555; margin: 4px 0; }
+        .project-links { font-size: 0.9rem; margin-top: 6px; }
         .project-links a { color: #0066cc; text-decoration: none; font-weight: bold; margin-right: 10px; }
         .badge { display: inline-block; background: #f0f4f8; color: #0044cc; font-size: 0.8rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 5px; }
 
@@ -61,14 +61,12 @@
 <div class="container">
     <!-- Left Profile Area -->
     <aside class="sidebar">
-        <!-- Replace with your picture file name once uploaded to your repo -->
-        <img src="profile.jpg" alt="Sana Tilak" class="profile-img" onerror="this.src='https://via.placeholder.com/240x300?text=Your+Photo'">
+        <img src="profile.jpg" alt="Sana Tilak" class="profile-img" onerror="this.src='https://via.placeholder.com/240x300?text=Sana+Tilak'">
         <h1 class="name">Sana Tilak</h1>
-        <p class="title">Chemistry Undergraduate Student</p>
+        <p class="title">Chemistry & Data Science Undergraduate</p>
         
         <ul class="contact-info">
-            <li>📧 <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-            <li>🔗 <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></li>
+            <li>📧 <a href="mailto:sana.tilak@gmail.com">sana.tilak@gmail.com</a></li>
             <li>💻 <a href="https://github.com" target="_blank">GitHub Profile</a></li>
             <li>📄 <a href="resume.pdf" target="_blank">Download Full CV PDF</a></li>
         </ul>
@@ -79,51 +77,82 @@
         <nav>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
-            <a href="#research">Research & Projects</a>
+            <a href="#research">Research & Experience</a>
             <a href="#education">Education</a>
         </nav>
 
         <section id="about">
-            <p>I am a first-year undergraduate chemistry student deeply interested in computational molecular workflows, molecular orbital dynamics, and algorithmic drug discovery pipelines.</p>
-            <p>My current academic focus explores how machine learning models read and analyze chemical spatial structures to optimize molecular data screening for neglected global health crises.</p>
+            <p>I am an undergraduate chemistry student concurrently pursuing advanced foundational training in Data Science and Applications via <strong>IIT Madras</strong>.</p>
+            <p>My passion lies at the intersection of organic chemistry, design, and cheminformatics. I am focused on applying 2D and 3D QSAR modeling workflows, molecular fingerprints, and machine learning to optimize biochemical screening data for global and neglected health challenges.</p>
             
             <blockquote>
-                <strong>Open for Collaboration:</strong> I am seeking remote volunteer opportunities or data verification roles relating to public health, rural education assistance, and structural chemistry tracking.
+                <strong>Open for Roles:</strong> I am actively seeking in-person volunteer roles, internships, or data verification opportunities in **New York City and the NYC metropolitan area** relating to public health, structural chemistry tracking, or laboratory data workflows.
             </blockquote>
         </section>
 
         <section id="skills">
             <h2>💻 Technical & Lab Capabilities</h2>
             <ul>
-                <li><strong>Computational Analysis:</strong> Machine Learning modeling, Molecular Fingerprinting, Data Benchmarking layouts.</li>
-                <li><strong>Software & Frameworks:</strong> Python (Pandas, NumPy, Scikit-Learn), HTML5/CSS3, Git/Version Control.</li>
-                <li><strong>Core Laboratory:</strong> Thin-Layer Chromatography (TLC), Spectroscopic Data collection, Titrations, Safe Chemical Sourcing.</li>
+                <li><strong>Computational & Cheminformatics:</strong> Introductory QSAR modeling, handling structural molecular files (.sdf, .mol), molecular fingerprint processing, basic predictive data plotting, and algorithm structures using Python.</li>
+                <li><strong>Wet Lab Methods:</strong> Thin-layer chromatography (TLC), Column chromatography, Spectrophotometry, Qualitative inorganic salt analysis, Titrations, and safe handling of organic solvents.</li>
+                <li><strong>Core Libraries & Tools:</strong> Python (Pandas, NumPy, Scikit-Learn), RDKit, Git/Version Control.</li>
             </ul>
         </section>
 
         <section id="research">
             <h2>🔬 Selected Projects & Research</h2>
             
+            <!-- Upcoming Project -->
             <div class="project-item">
                 <div class="project-title">A Rigorous 2D QSAR Benchmarking Study to Evaluate Molecular Fingerprints for Machine Learning-Driven Drug Discovery</div>
-                <span class="badge">In Progress</span>
+                <span class="badge">Upcoming Project</span>
                 <p class="project-authors"><strong>Sana Tilak</strong></p>
-                <p>Evaluating how distinct structural molecular descriptor frameworks impact predictive algorithm scoring against WHO neglected tropical disease targets.</p>
+                <p>Evaluating how 5 distinct descriptor frameworks (Morgan/ECFP4, ECFP6, MACCS keys, RDKit topological paths, and Atom Pairs) affect predictive modeling accuracy across 8 ChEMBL neglected disease target datasets. Utilizing a scaffold-split approach and fixed Random Forest classifiers to isolate structural encoding efficiency via ROC-AUC, BEDROC, and MCC evaluation matrices verified with Wilcoxon signed-rank testing.</p>
                 <div class="project-links">
-                    <a href="#">[Project Code]</a>
-                    <a href="#">[Abstract Layout]</a>
+                    <a href="#">[Project Abstract]</a>
                 </div>
             </div>
 
+            <!-- Phytochemicals QSAR Project -->
             <div class="project-item">
-                <div class="project-title">JUST LET IT GO! — Frontend Cathartic Web Interface</div>
-                <span class="badge">Finished</span>
-                <p class="project-authors">Design & Development Lead</p>
-                <p>An interactive, minimal digital notebook application structured using modern web animation handlers to enable user catharsis through disappearing text properties.</p>
+                <div class="project-title">3D QSAR Modeling of Phytochemical Anti-Inflammatory Pathways</div>
+                <span class="badge">In Progress</span>
+                <p class="project-authors"><strong>Sana Tilak</strong></p>
+                <p>Applying computational modeling to study the anti-inflammatory and antioxidant activities of gallic acid derivatives extracted from <em>Terminalia chebula</em>, an indigenous plant of the Indian subcontinent, by representing compound activity maps as localized 3D configurations.</p>
+            </div>
+
+            <!-- Reaction Visualizer Project -->
+            <div class="project-item">
+                <div class="project-title">3D Organic Chemistry Reaction Visualizer Tool</div>
+                <span class="badge">In Progress</span>
+                <p class="project-authors">Sole Developer</p>
+                <p>Designing an educational interactive tool constructed via Python web environments using structural .sdf asset parsing to enable Grade 12 students to visually analyze molecular organic mechanisms in real-time space transformations.</p>
                 <div class="project-links">
-                    <a href="#">[Live Application]</a>
-                    <a href="#">[Repository]</a>
+                    <a href="https://reaction-visualizer--ikigaiofme.replit.app/" target="_blank">[Live Application Draft]</a>
                 </div>
+            </div>
+
+            <!-- Hair Dye Research Project -->
+            <div class="project-item">
+                <div class="project-title">Spectrophotometric Identification of p-Phenylenediamine in Hair Dyes</div>
+                <span class="badge">Completed</span>
+                <p class="project-authors">Personal Research Project</p>
+                <p>Investigated concentrations of p-phenylenediamine across consumer cosmetic products. Analyzed safe-threshold deviations causing consumer risks, focusing on the structural mutation path where hydrogen peroxide compounds mix to yield mutagenic Bandrowski’s base complexes.</p>
+            </div>
+
+            <!-- Internships -->
+            <div class="project-item">
+                <div class="project-title">Research Intern — Department of Chemistry, IISc</div>
+                <span class="badge">Experience</span>
+                <p class="project-authors">Hari Group Labs (Prof. DP Hari)</p>
+                <p>Assisted PhD researchers with synthesis trials; observed the deployment of Grignard reagents, handled spectroscopic data streams, and prepared structured analytics documentation using Column and Thin-Layer Chromatography techniques.</p>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Research Intern — Glaze Chemistry Department, Claystation</div>
+                <span class="badge">Experience</span>
+                <p class="project-authors">Ceramic Metallurgy Lab Group</p>
+                <p>Collaborated with materials specialists to test alternative raw compounds. Produced an empirical case paper outlining structural coloration changes based on component variations within studio-crafted glaze formulations.</p>
             </div>
         </section>
 
@@ -131,8 +160,9 @@
             <h2>🎓 Academic Background</h2>
             <ul>
                 <li>
-                    <strong>Undergraduate Degree in Chemistry</strong><br>
-                    Expected Graduation: 2028 | Focus tracks: Computational Science, Physical Chemistry
+                    <strong>IIT Madras BS Degree Program</strong> (2025 — Ongoing)<br>
+                    Four-Year Certification / Degree Track in Data Science & Applications<br>
+                    <span style="font-size: 0.95rem; color: #666;">Completed Foundation Level I; Currently in Level II. Focus: Python Coding, Statistics, and Data Mathematics.</span>
                 </li>
             </ul>
         </section>
